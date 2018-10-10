@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Action controller-->
+  <node name="cmodel_simple_controller" pkg="robotiq_control" type="robotiq_simple_controller.py" output="screen">
+    <remap from="command" to="gripper/command"/>
+  </node>
+
+</launch>
