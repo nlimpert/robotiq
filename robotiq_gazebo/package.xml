@@ -23,6 +23,10 @@
   <run_depend>control_toolbox</run_depend>
   <run_depend>xmlrpcpp</run_depend>
   <run_depend>ros-controllers</run_depend>
+
+  <!-- This is Jennifer Buehler's gazebo_grasp_plugin.
+       Check https://github.com/JenniferBuehler/gazebo-pkgs -->
+  <run_depend>gazebo_grasp_plugin</run_depend>
   
   <export>
     <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
