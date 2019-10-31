@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- joint_state_controller -->
+  <rosparam file="$(find robotiq_gazebo)/controller/gazebo_gripper_controller.yaml" command="load"/>
+  <node name="joint_state_controller_spawner_gripper" pkg="controller_manager" type="controller_manager" args="spawn gazebo_gripper" respawn="false" output="screen"/>
+
+  <!-- Controller emulator -->
+  <node name="cmodel_controller_emulator" pkg="robotiq_gazebo" type="cmodel_controller_emulator.py"/>
+
+</launch>
