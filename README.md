@@ -26,7 +26,6 @@ cd ~/catkin_ws/src
 Clone these repository:
 ```{bash}
 git clone https://github.com/crigroup/robotiq.git
-git clone https://github.com/crigroup/openrave_catkin.git
 ```
 
 Install any missing dependencies using rosdep:
